@@ -85,6 +85,21 @@ src="https://www.facebook.com/tr?id=1836880430173547&ev=PageView&noscript=1"
      
     </div>
   </div>
+     </script>
+    <script>
+    document.addEventListener('contextmenu', function (e) {
+    e.preventDefault(); // Prevent the default right-click menu
+    // alert('Right-click is disabled on this webpage.');
+});
+
+document.addEventListener("keydown", function(event) {
+        // Check if Ctrl key is pressed along with 'U'
+        if (event.ctrlKey && event.key === "u") {
+            event.preventDefault(); // Prevent the default action
+            // alert("View source is disabled!"); // Optional alert message
+        }
+    });
+</script>
 </body>
 
 </html>
